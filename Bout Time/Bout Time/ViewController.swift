@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Properties
+    let roundsPerGame = 6
+    var rounds = 0
+    var correctRounds = 0
+    
+    // MARK: - Outlets
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        eventGenerator.createRoundEventPool()
+        
     }
    
 
