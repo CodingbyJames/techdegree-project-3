@@ -12,6 +12,7 @@ class EventGenerator {
     var roundEvents: [Event] = []
     func createRoundEventPool() {
         var totalEventPool: [Event] = eventPool
+        roundEvents = []
         for _ in 1...4 {
             let index = GKRandomSource.sharedRandom().nextInt(upperBound: totalEventPool.count)
             roundEvents.append(totalEventPool[index])

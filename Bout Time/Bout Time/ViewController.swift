@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     var correctRounds = 0
     
     // MARK: - Outlets
+    @IBOutlet weak var eventLabel0: UILabel!
+    @IBOutlet weak var eventLabel1: UILabel!
+    @IBOutlet weak var eventLabel2: UILabel!
+    @IBOutlet weak var eventLabel3: UILabel!
+    
     
 
     override func viewDidLoad() {
