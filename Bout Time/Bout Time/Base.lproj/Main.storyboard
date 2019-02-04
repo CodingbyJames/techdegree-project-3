@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2y-lP-HGk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2y-lP-HGk" userLabel="Timer">
                                 <rect key="frame" x="152.5" y="582" width="70" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="1og-tX-hoq"/>
@@ -248,10 +248,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Event0" destination="BIt-83-HyP" id="e0q-ns-TO6"/>
-                        <outlet property="Event1" destination="UYc-zp-VhW" id="q82-UU-dOU"/>
-                        <outlet property="Event2" destination="m6R-2l-uRU" id="Tgw-n1-i7a"/>
-                        <outlet property="Event3" destination="bLb-RM-jv1" id="cWZ-CL-ivD"/>
+                        <outlet property="Event0" destination="BIt-83-HyP" id="zqt-Tu-lrc"/>
+                        <outlet property="Event1" destination="UYc-zp-VhW" id="4qb-hd-uS9"/>
+                        <outlet property="Event2" destination="m6R-2l-uRU" id="VN2-jJ-ai8"/>
+                        <outlet property="Event3" destination="bLb-RM-jv1" id="aOH-vh-kfc"/>
+                        <outlet property="timer" destination="B2y-lP-HGk" id="aeM-Za-VpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
