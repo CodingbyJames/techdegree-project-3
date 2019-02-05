@@ -141,7 +141,13 @@ class ViewController: UIViewController {
             }
         }
         else {
-            endGame()
+            if (eventGenerator.roundEvents[0].eventYear < eventGenerator.roundEvents[1].eventYear) && (eventGenerator.roundEvents[1].eventYear < eventGenerator.roundEvents[2].eventYear) && (eventGenerator.roundEvents[2].eventYear < eventGenerator.roundEvents[3].eventYear) {
+                correctRounds += 1
+                endGame()
+            }
+            else {
+                endGame()
+            }
         }
     }
     func roundEnd() {
