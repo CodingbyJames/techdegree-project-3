@@ -36,12 +36,12 @@ let event16 = Event.init(eventName: "Death of Osama bin Laden", eventYear: 2011)
 let event17 = Event.init(eventName: "Assassination of John F. Kennedy", eventYear: 1963)
 let event18 = Event.init(eventName: "World wide web goes live", eventYear: 1991)
 let event19 = Event.init(eventName: "Cuban missile crisis", eventYear: 1962)
-let event20 = Event.init(eventName: "Nelson MAndela released from prison", eventYear: 1990)
+let event20 = Event.init(eventName: "Nelson Mandela released from prison", eventYear: 1990)
 let event21 = Event.init(eventName: "Watergate Scandal", eventYear: 1972)
 let event22 = Event.init(eventName: "Suzanne Lenglen Breaks Wimbledon Record", eventYear: 1925)
 let event23 = Event.init(eventName: "Charles Lindbergh Flies the Atlantic Solo", eventYear: 1927)
 let event24 = Event.init(eventName: "Hindenburg Airship Crash", eventYear: 1937)
-let event25 = Event.init(eventName: "Roger Bannister breaks the 4 mninute mile", eventYear: 1954)
+let event25 = Event.init(eventName: "Roger Bannister breaks the 4 minute mile", eventYear: 1954)
 
 let eventPool: [Event] = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12, event13, event14, event15, event16, event17, event18, event19, event20, event21, event22, event23, event24, event25]
 

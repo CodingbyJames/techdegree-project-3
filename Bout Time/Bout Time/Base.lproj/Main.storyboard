@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,16 +67,23 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ez0-Eq-xNW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-A2-XJQ" userLabel="Button1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-A2-XJQ" userLabel="Button0Down">
                                 <rect key="frame" x="295" y="40" width="50" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Df4-9m-0CY"/>
                                     <constraint firstAttribute="width" constant="50" id="wAM-wa-w7O"/>
                                 </constraints>
-                                <state key="normal" title="Button1" backgroundImage="down_full">
+                                <state key="normal" title="Button0Down" backgroundImage="down_full">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" backgroundImage="down_full_selected"/>
+                                <connections>
+                                    <action selector="button0Down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHc-nZ-Cfr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample event text goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-zp-VhW" userLabel="Event1">
                                 <rect key="frame" x="20" y="170" width="275" height="120"/>
@@ -92,45 +99,61 @@
                                 <color key="textColor" red="0.0" green="0.1647058824" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sca-ZM-2yv" userLabel="Button2Down">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sca-ZM-2yv" userLabel="Button1Down">
                                 <rect key="frame" x="295" y="230" width="50" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hCW-ke-T90"/>
                                     <constraint firstAttribute="width" constant="50" id="kiu-QF-8uT"/>
                                 </constraints>
-                                <state key="normal" title="Button2Down" backgroundImage="down_half">
+                                <state key="normal" title="Button1Down" backgroundImage="down_half">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" backgroundImage="down_half_selected"/>
+                                <connections>
+                                    <action selector="button1Down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUX-m7-8nG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhF-dn-tUA" userLabel="Button3Down">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhF-dn-tUA" userLabel="Button2Down">
                                 <rect key="frame" x="295" y="360" width="50" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="QYN-2r-Jkb"/>
                                     <constraint firstAttribute="height" constant="60" id="saV-4t-Nvy"/>
                                 </constraints>
-                                <state key="normal" title="Button3Down" backgroundImage="down_half">
+                                <state key="normal" title="Button2Down" backgroundImage="down_half">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" backgroundImage="down_half_selected"/>
+                                <connections>
+                                    <action selector="button2Down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE3-eu-Txs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-Ob-EwL" userLabel="Button2Up">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-Ob-EwL" userLabel="Button1Up">
                                 <rect key="frame" x="295" y="170" width="50" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EYT-E3-s7t"/>
                                     <constraint firstAttribute="height" constant="60" id="Zfs-fR-cDT"/>
                                 </constraints>
-                                <state key="normal" title="Button2Up" backgroundImage="up_half">
+                                <state key="normal" title="Button1Up" backgroundImage="up_half">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" backgroundImage="up_half_selected"/>
+                                <connections>
+                                    <action selector="button1Up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KBC-R5-QNl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQq-St-Plj" userLabel="Button3Up">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQq-St-Plj" userLabel="Button2Up">
                                 <rect key="frame" x="295" y="300" width="50" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ihw-3X-ftI"/>
                                     <constraint firstAttribute="width" constant="50" id="qhm-cy-5s0"/>
                                 </constraints>
-                                <state key="normal" title="Button3Up" backgroundImage="up_half">
+                                <state key="normal" title="Button2Up" backgroundImage="up_half">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" backgroundImage="up_half_selected"/>
+                                <connections>
+                                    <action selector="button2Up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJ2-ke-Mbl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample event text goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6R-2l-uRU" userLabel="Event2">
                                 <rect key="frame" x="20" y="300" width="275" height="120"/>
@@ -160,16 +183,6 @@
                                 <color key="textColor" red="0.0" green="0.1647058824" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKg-zd-XTR" userLabel="Button4">
-                                <rect key="frame" x="295" y="430" width="50" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="TY3-tD-kCo"/>
-                                    <constraint firstAttribute="width" constant="50" id="eoy-85-A4o"/>
-                                </constraints>
-                                <state key="normal" title="Button3Down" backgroundImage="down_full">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="redraw" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2u-gS-vEp" userLabel="ButtonFailure" customClass="RoundButton" customModule="Bout_Time" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="577" width="150" height="50"/>
                                 <constraints>
@@ -185,6 +198,46 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="failure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpf-N5-Edw"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3y-uY-9dq">
+                                <rect key="frame" x="87.5" y="296" width="200" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CmC-bl-gDJ"/>
+                                    <constraint firstAttribute="height" constant="75" id="Zk3-J1-bK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahB-mg-USG" userLabel="playAgain">
+                                <rect key="frame" x="112.5" y="467" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RyR-mw-Qbg"/>
+                                    <constraint firstAttribute="width" constant="150" id="VA7-3L-xq4"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="play_again">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHd-5j-eKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKg-zd-XTR" userLabel="Button3Up">
+                                <rect key="frame" x="295" y="430" width="50" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="TY3-tD-kCo"/>
+                                    <constraint firstAttribute="width" constant="50" id="eoy-85-A4o"/>
+                                </constraints>
+                                <state key="normal" title="Button3Up" backgroundImage="up_full">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" backgroundImage="up_full_selected"/>
+                                <connections>
+                                    <action selector="button3Up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="70A-0b-Ryg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -195,10 +248,12 @@
                             </constraint>
                             <constraint firstItem="K2u-gS-vEp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2FT-yb-huy"/>
                             <constraint firstItem="5RH-A2-XJQ" firstAttribute="leading" secondItem="BIt-83-HyP" secondAttribute="trailing" id="4Tk-qD-rCF"/>
+                            <constraint firstItem="ahB-mg-USG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Mm-Gl-2s1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FQq-St-Plj" secondAttribute="trailing" constant="30" id="66V-aE-myv"/>
                             <constraint firstItem="B2y-lP-HGk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95u-sZ-CWj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKg-zd-XTR" secondAttribute="trailing" constant="30" id="9mq-jQ-8sx"/>
                             <constraint firstItem="sca-ZM-2yv" firstAttribute="top" secondItem="Jz9-Ob-EwL" secondAttribute="bottom" id="Au2-Q0-f74"/>
+                            <constraint firstItem="u3y-uY-9dq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Edb-w2-ggq"/>
                             <constraint firstItem="bLb-RM-jv1" firstAttribute="top" secondItem="m6R-2l-uRU" secondAttribute="bottom" constant="10" id="Eq3-Bg-wJX">
                                 <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                             </constraint>
@@ -226,6 +281,7 @@
                             <constraint firstItem="UYc-zp-VhW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iJ4-Wy-sDr">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
+                            <constraint firstItem="u3y-uY-9dq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j51-Bc-v5b"/>
                             <constraint firstItem="bLb-RM-jv1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k33-Cx-kUF">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
@@ -238,6 +294,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="9mR-3Q-X3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v0r-OL-XBQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ahB-mg-USG" secondAttribute="bottom" constant="150" id="v12-rQ-i6y"/>
                             <constraint firstItem="br1-aq-3fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOe-BF-CbW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jz9-Ob-EwL" secondAttribute="trailing" constant="30" id="x4i-3e-bU9"/>
                             <constraint firstItem="m6R-2l-uRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xeE-Gb-sOt">
@@ -252,6 +309,17 @@
                         <outlet property="Event1" destination="UYc-zp-VhW" id="4qb-hd-uS9"/>
                         <outlet property="Event2" destination="m6R-2l-uRU" id="VN2-jJ-ai8"/>
                         <outlet property="Event3" destination="bLb-RM-jv1" id="aOH-vh-kfc"/>
+                        <outlet property="btnFailure" destination="K2u-gS-vEp" id="iOy-kG-dqv"/>
+                        <outlet property="btnSuccess" destination="br1-aq-3fq" id="HMh-7t-w1u"/>
+                        <outlet property="button0Down" destination="5RH-A2-XJQ" id="0rH-Qw-BQ9"/>
+                        <outlet property="button1Down" destination="sca-ZM-2yv" id="Awd-Kl-1tz"/>
+                        <outlet property="button1Up" destination="Jz9-Ob-EwL" id="eAo-lP-ZYT"/>
+                        <outlet property="button2Down" destination="RhF-dn-tUA" id="XqF-fd-y0N"/>
+                        <outlet property="button2Up" destination="FQq-St-Plj" id="xId-02-rCG"/>
+                        <outlet property="button3Up" destination="HKg-zd-XTR" id="5sM-K0-oDm"/>
+                        <outlet property="finalScore" destination="u3y-uY-9dq" id="kgY-3p-q8b"/>
+                        <outlet property="playAgainBtn" destination="ahB-mg-USG" id="WeS-h8-gzc"/>
+                        <outlet property="shake" destination="9mR-3Q-X3o" id="lQS-Uh-buD"/>
                         <outlet property="timer" destination="B2y-lP-HGk" id="aeM-Za-VpV"/>
                     </connections>
                 </viewController>
@@ -262,9 +330,15 @@
     </scenes>
     <resources>
         <image name="down_full" width="158" height="457"/>
+        <image name="down_full_selected" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
+        <image name="down_half_selected" width="158" height="229"/>
         <image name="next_round_fail" width="558" height="142"/>
         <image name="next_round_success" width="558" height="142"/>
+        <image name="play_again" width="450" height="142"/>
+        <image name="up_full" width="158" height="457"/>
+        <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
+        <image name="up_half_selected" width="158" height="229"/>
     </resources>
 </document>
